@@ -1,9 +1,9 @@
 {
   "build": {
-    "beforeBuildCommand": "npm run build && npm run export",
+    "beforeBuildCommand": "npm run build",
     "beforeDevCommand": "npm run dev",
     "devPath": "http://localhost:3000",
-    "distDir": "../out"
+    "distDir": "../dist/public"
   },
   "package": {
     "productName": "node_audio",
@@ -28,7 +28,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.tauri.dev",
+      "identifier": "com.tauri.dev2",
       "longDescription": "",
       "macOS": {
         "entitlements": null,
