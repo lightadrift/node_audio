@@ -12,6 +12,10 @@ import {
   Scripts,
   Title,
 } from "solid-start";
+import { lazy } from "solid-js";
+
+const WindowTitle = lazy(() => import("./components/Window/WindowTitleBar"));
+
 import "./root.css";
 
 export default function Root() {
@@ -23,6 +27,7 @@ export default function Root() {
         <Meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Body>
+      <WindowTitle/>
         <Suspense>
           <ErrorBoundary>
             <A class="mr-2" href="/">

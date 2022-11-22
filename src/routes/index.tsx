@@ -4,14 +4,14 @@ import { A } from "solid-start";
 import Counter from "~/components/Counter";
 
 export default function Home() {
-  onMount(() => {
-    invoke('greet', { name: 'World' })
+  function onClick () {
+    invoke('test', { name: 'World' })
     .then(console.log)
     .catch(console.error)
-  })
+  }
   return (
     <main class="text-center mx-auto text-gray-700 p-4">
-      <h1 class="max-6-xs text-6xl text-sky-700 font-thin uppercase my-16">
+      <h1 onClick={onClick} class="max-6-xs text-6xl text-sky-700 font-thin uppercase my-16">
         Hello worlda!
       </h1>
       <Counter />
