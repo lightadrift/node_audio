@@ -12,12 +12,15 @@ rust-version = "1.59"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [build-dependencies]
-tauri-build = { version = "1.2.0", features = [] }
+tauri-build = { version = "1.2.1", features = [] }
 
 [dependencies]
+windows = { version = "0.43.0", features = ["Win32_Media_Audio", "Win32_Foundation", "Win32_System_Com", "Win32_Devices_Properties", "Win32_Media_KernelStreaming", "Win32_System_Com_StructuredStorage", "Win32_System_Ole", "Win32_System_Threading", "Win32_Security", "Win32_System_SystemServices", "Win32_System_WindowsProgramming", "Win32_Media_Multimedia", "Win32_UI_Shell_PropertiesSystem", "Data", "Win32_UI_WindowsAndMessaging", "Data_Xml", "Data_Xml_Dom", "Win32_System_Com_CallObj", "Win32_System_Com_ChannelCredentials", "Win32_System_Com_Events"] }
+cpal = "0.14.1"
+rodio = "0.16.0"
 serde_json = "1.0"
 serde = { version = "1.0", features = ["derive"] }
-tauri = { version = "1.2.0", features = ["system-tray", "window-close", "window-maximize", "window-minimize", "window-start-dragging", "window-unmaximize"] }
+tauri = { version = "1.2.1", features = ["system-tray", "window-close", "window-maximize", "window-minimize", "window-start-dragging", "window-unmaximize"] }
 
 [features]
 # by default Tauri runs in production mode
