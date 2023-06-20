@@ -8,20 +8,23 @@
   },
   "type": "module",
   "devDependencies": {
+    "@types/prettier": "^2.7.2",
     "autoprefixer": "^10.4.12",
     "postcss": "^8.4.18",
-    "solid-start-node": "^0.2.0",
+    "prettier": "^2.8.4",
+    "prettier-plugin-tailwindcss": "^0.2.5",
+    "solid-start-node": "^0.2.23",
     "tailwindcss": "^3.2.0",
-    "typescript": "^4.8.4",
-    "vite": "^3.1.8"
+    "typescript": "^5.0.2",
+    "vite": "^4.2.0"
   },
   "dependencies": {
     "@solidjs/meta": "^0.28.0",
-    "@solidjs/router": "^0.5.0",
+    "@solidjs/router": "^0.7.0",
     "@tauri-apps/api": "^1.2.0",
     "solid-icons": "^1.0.4",
     "solid-js": "^1.6.0",
-    "solid-start": "^0.2.0",
+    "solid-start": "^0.2.23",
     "undici": "^5.11.0"
   },
   "engines": {

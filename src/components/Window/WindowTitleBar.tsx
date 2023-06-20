@@ -3,7 +3,7 @@ import { TbLayersIntersect } from "solid-icons/tb";
 import { BsDashLg } from "solid-icons/bs";
 import { IoClose } from "solid-icons/io";
 
-const COLOR = "#f1f5f9";
+const COLOR = "#1C1C28";
 
 function WindowTitle() {
   return (
@@ -16,23 +16,23 @@ function WindowTitle() {
             return;
           }
         }}
-        class="bg-slate-700 flex w-full h-9 z-0 place-content-end"
+        class="fixed top-0 z-0 flex h-7 w-full place-content-end bg-white"
       >
         <button
-          class="w-8 hover:bg-neutral-50 hover:bg-opacity-25 flex flex-row justify-center place-items-center hover:cursor-default"
+          class="flex w-8 flex-row place-items-center justify-center hover:cursor-default hover:bg-[#1C1C28] hover:bg-opacity-25"
           onClick={() => appWindow.minimize()}
         >
           <BsDashLg size={20} color={COLOR} />
         </button>
         <button
-          class="w-8 hover:bg-neutral-50 hover:bg-opacity-25 flex flex-row justify-center place-items-center hover:cursor-default"
+          class="flex w-8 flex-row place-items-center justify-center hover:cursor-default hover:bg-[#1C1C28] hover:bg-opacity-25"
           onClick={() => appWindow.toggleMaximize()}
         >
           <TbLayersIntersect size={20} color={COLOR} />
         </button>
         <button
           onClick={() => appWindow.close()}
-          class=" w-8 hover:bg-red-500 flex flex-row justify-center place-items-center hover:cursor-default"
+          class=" flex w-8 flex-row place-items-center justify-center hover:cursor-default hover:bg-red-500"
         >
           <IoClose size={20} color={COLOR} />
         </button>

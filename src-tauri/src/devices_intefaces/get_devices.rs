@@ -1,11 +1,11 @@
 // use cpal::traits::{DeviceTrait, HostTrait};
 use serde::{Deserialize, Serialize};
-use std::error::Error;
+// use std::error::Error;
 use std::ffi::OsString;
 use std::os::windows::ffi::OsStringExt;
 use std::ptr::{self, null};
 use std::slice;
-use windows::core::PWSTR;
+// use windows::core::PWSTR;
 use windows::Win32::Devices::Properties;
 use windows::Win32::Media::Audio::*;
 use windows::Win32::System::Com::*;
@@ -82,10 +82,10 @@ impl Device {
         }
         return list_devices;
     }
+
     pub fn serialize_list(&self) -> String {
         let list = self.get_list(eAll, DEVICE_STATE_ACTIVE);
         let json_list = serde_json::to_string(&list).expect("não foi possivel serializar");
-        println!("{:?}", json_list);
         return json_list;
     }
 }
