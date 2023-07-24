@@ -1,30 +1,4 @@
-# SolidStart
+# Node Audio
 
-Everything you need to build a Solid project, powered by [`solid-start`](https://start.solidjs.com);
+Um começo de projeto em que quis construir um aplicativo similar ao Loopback da RogueAmoeba. No entanto, o projeto foi deixado de lado por enquanto, até que eu tenha tempo para lidar com os drivers no Windows. Nunca havia trabalhado com a API do Windows antes, e foi um bom início para esse projeto. Utilizei o Tauri para a construção do aplicativo desktop que engloba solid (o framework de javascript é a sua escolha) para o cliente e Rust no backend da aplicação. Também foi a minha primeira vez utilizando Rust.
 
-## Creating a project
-
-```bash
-# create a new project in the current directory
-npm init solid
-
-# create a new project in my-app
-npm init solid my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-Solid apps are built with _adapters_, which optimise your project for deployment to different environments.
-
-By default, `npm run build` will generate a Node app that you can run with `npm start`. To use a different adapter, add it to the `devDependencies` in `package.json` and specify in your `vite.config.js`.
